@@ -57,9 +57,8 @@ function verifySlide() {
 
     firstSlide.style.marginLeft = (-currentSlide * 100) + "vw";
 
-    document.querySelectorAll(".about .controls button").forEach((element) => {
-        element.classList.remove("current");
-    });
+    (controls.querySelector("button.current")).classList.remove("current");
+      
     document.getElementById(currentSlide).classList.add("current");
 
 }
